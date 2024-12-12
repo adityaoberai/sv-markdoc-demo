@@ -1,0 +1,12 @@
+---
+title: Test blog title 2
+description: Description of this test blog
+author: Aditya Oberai
+date: 2024-12-10
+timeToRead: 3
+layout: blog
+---
+
+Test content for this blog
+
+![Aditya Oberai's Pic](https://oberai.dev/pic)
