@@ -17,16 +17,6 @@
 </div>
 
 <style>
-    /* General reset for consistent styles */
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Arial', sans-serif;
-        background-color: #f8f9fa;
-        color: #343a40;
-    }
-
-    /* Container for the page content */
     .container {
         max-width: 800px;
         margin: 50px auto;
@@ -36,27 +26,24 @@
         border-radius: 8px;
     }
 
-    /* Blog header styling */
     h1 {
-        font-size: 2.5em;
+        font-size: 2.5rem;
         font-weight: bold;
-        margin-bottom: 20px;
+        margin-bottom: 2.5rem;
         text-align: center;
         color: #007bff;
     }
 
-    /* Blog list styles */
     ul {
         list-style: none;
         padding: 0;
     }
 
     li {
-        margin: 10px 0;
-        font-size: 1.2em;
+        margin: 1.25rem 0;
+        font-size: 1.2rem;
     }
 
-    /* Link styles */
     a {
         text-decoration: none;
         color: #007bff;
@@ -68,25 +55,23 @@
         text-decoration: underline;
     }
 
-    /* Date styling */
     .date {
-        font-size: 0.9em;
+        font-size: 0.9rem;
         color: #6c757d;
     }
 
-    /* Responsive design */
     @media (max-width: 768px) {
         .container {
-            margin: 20px;
-            padding: 15px;
+            margin: 2.5rem;
+            padding: 1.5rem;
         }
 
         h1 {
-            font-size: 2em;
+            font-size: 2rem;
         }
 
         li {
-            font-size: 1em;
+            font-size: 1rem;
         }
     }
 </style>

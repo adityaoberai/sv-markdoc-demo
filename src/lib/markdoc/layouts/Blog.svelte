@@ -2,11 +2,7 @@
     import "$lib/markdoc/styles/blog.css";
 	import { formatDate } from "$lib/utils/date";
     
-    export let title;
-    export let description;
-    export let author;
-	export let date;
-    export let timeToRead;
+    let { title, description, author, date, timeToRead, children } = $props();
 </script>
 
 <svelte:head>
@@ -16,6 +12,7 @@
 
 <main>
 	<section id="title">
+        <a href="/"><em>&larr; Back to blog</em></a>
 		<h1>{title}</h1>
         <p class="description">{description}</p>
         <ul>
@@ -25,17 +22,20 @@
         </ul>
 		<hr />
 	</section>
-	<slot />
+
+	{@render children()}
 </main>
 
 <style>
 	main {
 		width: 80%;
-		min-height: 100vh;
 		padding: 1.5rem 2.5rem;
-		margin: 0 auto;
+		margin: 1.5rem auto;
 		justify-content: center;
 		align-items: center;
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
 	}
 
     #title > ul {
