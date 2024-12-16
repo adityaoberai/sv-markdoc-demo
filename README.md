@@ -1,38 +1,32 @@
-# sv
+# SvelteKit Markdoc Blog Demo
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A blog that uses Static Site Generation on SvelteKit and Markdoc to render blogs from Markdown
 
-## Creating a project
+## Setup
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Run the following commands in your terminal:
 
 ```bash
+git clone https://github.com/adityaoberai/sv-markdoc-demo.git
+cd sc-markdoc-demo
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+## Add new blog
 
-To create a production version of your app:
+To add a new blog, go to the directory `./src/routes/blog`, create a new directory (the name of this directory will act as your endpoint), and add a `+page.markdoc` file with content in the following style:
 
-```bash
-npm run build
+```html
+---
+title: Title of the blog
+description: Description of the blog
+author: Aditya Oberai
+date: 2024-12-16
+timeToRead: 3
+layout: blog
+---
+
+<Add blog content in Markdown here>
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+ _Note: Do not edit the `layout: blog` field. ALso, the date is in `yyyy-mm-dd` format._
