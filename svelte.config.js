@@ -10,7 +10,7 @@ const config = {
 		vitePreprocess(), 
 		markdoc({
 			layouts: {
-				blog: join(dirname(fileURLToPath(import.meta.url)), './src/lib/markdoc/layouts/Blog.svelte')
+				blog: join(dirname(fileURLToPath(import.meta.url)), './src/markdoc/layouts/Blog.svelte')
 			}
 		})
 	],

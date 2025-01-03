@@ -1,5 +1,5 @@
 <script>
-    import "$lib/markdoc/styles/blog.css";
+    import "../styles/blog.css";
 	import { formatDate } from "$lib/utils/date";
     
     let { title, description, author, date, timeToRead, children } = $props();
