@@ -10,14 +10,25 @@ layout: blog
 Test content for this blog
 
 {% table %}
-* Heading 1
-* Heading 2
+* Foo
+* Bar
+* Baz
 ---
-* Row 1 Cell 1
-* Row 1 Cell 2
+*
+  ```
+  puts "Some code here."
+  ```
+* Text in a table
 ---
-* Row 2 Cell 1
-* Row 2 cell 2
+*
+  A "loose" list with
+
+  multiple line items
+* Test 2
+* Test 3
+---
+* Test 1
+* A cell that spans two columns {% colspan=2 %}
 {% /table %}
 
 ![Aditya Oberai's Pic](https://oberai.dev/pic)
