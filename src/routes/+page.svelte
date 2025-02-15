@@ -1,7 +1,7 @@
 <script>
     import { formatDate } from "$lib/utils/date.js";
 
-    export let data; // Accepts props for blog data
+    let { data } = $props();
 </script>
 
 <svelte:head>
