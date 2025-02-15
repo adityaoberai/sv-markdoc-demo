@@ -5,8 +5,8 @@
 </script>
 
 <svelte:head>
-<title>Blog Demo<title>
-<meta name="description" content="A test blog site built with SvelteKit and Markdoc">
+    <title>Blog Demo</title>
+    <meta name="description" content="A test blog site built with SvelteKit and Markdoc" />
 </svelte:head>
 
 <div class="container">
