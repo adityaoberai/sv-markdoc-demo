@@ -8,7 +8,7 @@ Run the following commands in your terminal:
 
 ```bash
 git clone https://github.com/adityaoberai/sv-markdoc-demo.git
-cd sc-markdoc-demo
+cd sv-markdoc-demo
 npm install
 npm run dev
 ```
